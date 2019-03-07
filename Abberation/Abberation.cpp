@@ -6,6 +6,7 @@
 #include <cmath>
 #include <gsl/gsl_linalg.h>
 
+
 using namespace cv;
 using namespace std;
 
@@ -344,7 +345,7 @@ int main(int argc, char** argv)
 	// Нужно потом попробовать уменьшить их количество
 
 	// Создаем детектор блобов с параметрами
-	Ptr<SimpleBlobDetector> detector = SimpleBlobDetector::create(params);
+	Ptr<SimpleBlobDetector> detector = new SimpleBlobDetector(params);
 
 	// Считываем картинку из папки
 	// Сделать так, чтобы программа принимала параметр из параметра командной строки?
