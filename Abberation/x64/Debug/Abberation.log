@@ -1,7 +1,5 @@
-﻿  pch.cpp
-  Abberation.cpp
-c:\users\dmitry\source\repos\abberation\abberation\abberation.cpp(337): warning C4305: =: усечение из "double" в "float"
-c:\users\dmitry\source\repos\abberation\abberation\abberation.cpp(340): warning C4305: =: усечение из "double" в "float"
-c:\users\dmitry\source\repos\abberation\abberation\abberation.cpp(343): warning C4305: =: усечение из "double" в "float"
-LINK : warning LNK4098: библиотека по умолчанию "MSVCRT" противоречит использованию других библиотек; используйте параметр /NODEFAULTLIB:library
-  Abberation.vcxproj -> C:\Users\Dmitry\source\repos\Abberation\x64\Debug\Abberation.exe
+﻿  Abberation.cpp
+c:\users\dmitry\documents\aberration\abberation\abberation.cpp(337): warning C4305: =: усечение из "double" в "float"
+c:\users\dmitry\documents\aberration\abberation\abberation.cpp(340): warning C4305: =: усечение из "double" в "float"
+c:\users\dmitry\documents\aberration\abberation\abberation.cpp(343): warning C4305: =: усечение из "double" в "float"
+  Abberation.vcxproj -> C:\Users\Dmitry\Documents\aberration\x64\Debug\Abberation.exe

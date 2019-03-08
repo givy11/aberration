@@ -349,7 +349,13 @@ int main(int argc, char** argv)
 
 	// Считываем картинку из папки
 	// Сделать так, чтобы программа принимала параметр из параметра командной строки?
-	imageOrigin = imread(argv[1], CV_LOAD_IMAGE_COLOR);
+	//imageOrigin = imread(argv[1], CV_LOAD_IMAGE_COLOR);
+	imageOrigin = imread(R"(C:\Users\Dmitry\Documents\aberration\x64\Debug\original.jpg)", CV_LOAD_IMAGE_COLOR);
+	if (imageOrigin.empty())
+	{
+		std::cerr << "Cannot read image file: "  << std::endl;
+		return -1;
+	}
 
 	// Инициализируем пустую картинку той же размерности, что и оригинальная
 	Mat imageCorrected(imageOrigin.rows, imageOrigin.cols, imageOrigin.type(), Scalar(0, 0, 0));
